@@ -1,0 +1,62 @@
+/*
+    Group Selectors
+
+    1:     (*)             => Tüm etiketler
+    2:     (p)             => Tüm p etiketleri
+    3:     (div p)         => div içindeki tüm p etiketleri
+    4:     (div,p)         => Tüm div ve tüm p etiketleri
+    5:     (div>p)         => Üst etiketi div olan tüm p etiketleri
+    6:     (p~div)         => p ile aynı seviyede olan tüm div etiketleri
+    7:     (p+div)         => p etiketlerinden sonra gelen divler
+
+*/
+/*--------------------------------------------------------------------- */
+
+/*
+*{
+    border: 1px solid blue;
+}
+*/
+
+/*--------------------------------------------------------------------- */
+
+/* container altındaki divlerden class'ı box olanları seçtik
+
+.container div.box{
+    border: 1px solid red;
+}
+*/
+
+/*--------------------------------------------------------------------- */
+
+/* divlerden class ı box olanları ve p etiketlerini seçtik 
+
+div.box,p{
+    border: 1px solid green;
+}
+*/
+
+/*--------------------------------------------------------------------- */
+
+/* Bir üst etiketi div olan tüm p etiketlerini seçtik 
+div>p{
+    border: 1px solid brown;
+}
+*/
+
+/*--------------------------------------------------------------------- */
+
+/* p etiketi ile aynı seviyede olan tüm divler
+
+p~div{
+    border: 1px solid black;
+}
+*/
+
+/*--------------------------------------------------------------------- */
+
+/* p etiketinden sonra gelen ilk divleri seçtik
+p+div{
+    border: 1px solid black;
+}
+*/
